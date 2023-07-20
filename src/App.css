@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+  --blue: #266cfb;
+  --grey: #ccc;
+  --lightBlack: #333
+}
+.account, .search-bar-wrapper {
+  padding: .5em 8em;
+}
+.account {
+  padding-block: .5em;
+  display: flex;
+  justify-content: end;
+  border-bottom: 1px solid var(--grey);
+}
+.account span.name {
+  margin-right: 2em;
+  position: relative;
+  color: var(--blue);
+  font-weight: 500;
+}
+.account span.name::after {
+  content: '';
+  height: 100%;
+  width: 1px;
+  background: var(--grey);
+  position: absolute;
+  right: -1em;
+}
+.account button.logout {
+  font-size: 1em;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  transition-duration: .3s;
+}
+.account button.logout > * {
+  margin-left: .5em;
+}
+.account button.logout:hover {
+  color: var(--blue);
+}
+.search-bar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.search-bar-wrapper h1 {
+  font-family: 'Bebas Neue';
+  color: var(--blue);
+  font-size: 2.3em;
+}
+.search-bar-wrapper input {
+  border-radius: 10em;
+  border: 1px solid var(--grey);
+  padding-block: 7px;
+  width: 33em;
+  padding-inline: 2em;
+}
+.search-box-container {
+  position: relative;
+}
+.search-box-container button {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  background: var(--blue);
+  color: white;
+  border-top-right-radius: 10em;
+  border-bottom-right-radius: 10em;
+  padding-inline: 1em;
+  transition-duration: .3s;
+  font-weight: 600;
+}
+.search-box-container button:hover {
+  background: var(--lightBlack);
+}
+.account button.logout , .search-bar-wrapper .cart {
+  color: var(--lightBlack);
+}
+.search-bar-wrapper .cart {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition-duration: .3s;
+}
+.search-bar-wrapper .cart:hover {
+  color: var(--blue);
+}
+.search-bar-wrapper .cart > * {
+  margin-left: 1em;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  background: var(--blue);
+  color: white;
+  font-size: 1em;
+  gap: 3em;
+}
+nav ul li {
+  cursor: pointer;
+  padding-block: .7em;
+  position: relative;
+}
+nav ul li::after {
+  content: '';
+  position: absolute;
+  background: var(--lightBlack);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  border-radius: 3px;
+  /* width: 0; */
+  width: 100%;  
+  transition-duration: .3s;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+nav ul li:hover::after {
+  /* width: 100%; */
+  transform: scaleX(1);
+}
+.hero-img {
+  background: url('./assets/Home Setup.jpg') center/cover no-repeat;
+  height: calc(100vh - 151px);
+  position: relative;
+}
+.hero-text {
+  position: absolute;
+  top: 10em;
+  left: 7em;
+  font-size: 1.3em;
+}
+.hero-text h1, .hero-text p{
+  color: white;
+  text-shadow: 2px 2px 5px var(--lightBlack);
+}
+.hero-text button {
+  color: white;
+}
+.hero-text button {
+  background: var(--blue);
+  padding: .7em 1.3em;
+  margin-top: 2em;
+  transition-duration: .3s;
+  font-weight: 600;
+  font-size: 16px;
+}
+.hero-text button:hover {
+  background: var(--lightBlack);
+}
+.services-highlight-wrapper {
+  position: relative;
+}
+.services-highlight-container {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  transform: translateY(-50%);
+}
+.services-highlight-container .service {
+  /* box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; */
+  width: 14em;
+  height: 11em;
+  border-radius: 5px;
+  background: white;
+  text-align: center;
+  padding: 1em;
+  transition-duration: .3s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -5px 0px inset;
+  text-wrap: balance;
+}
+.service:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px 0px 0px inset;
+  transform: translateY(5px);
+}
+.services-highlight-container .service .title {
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+.services-highlight-container .service .description {
+  font-weight: 300;
+  max-width: 70%;
+  margin-inline: auto;
+}
+  .newsletter {
+  background: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em 7em;
+}
+.newsletter .title-container h1, .newsletter .title-container p { 
+  color: white;
+  font-weight: 500;
+}
+.newsletter .title-container p {
+  font-weight: 300;
+}
+.newsletter button {
+  height: 100%;
+  padding-inline: 1em;
+  background: var(--lightBlack);
+  color: white;
+  font-weight: 600;
+  transition-duration: .3s;
+}
+.newsletter button:hover {
+  background: var(--lightBlack);  
+}
+.newsletter .email {
+  height: 2.5em;
+}
+.newsletter .email input {
+  border: none;
+  height: 100%;
+  padding-left: 1em;
+  width: 50em;
+  border-radius: 3px;
+}

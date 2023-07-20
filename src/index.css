@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+  outline: transparent;
+}
+body {
+  min-height: 100vh;
+}
+ul {
+  list-style: none;
+}
+h1 {
+  font-weight: 600;
+  font-size: 1.7em;
+}
+h1, p {
+  color: #333;
+}
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
