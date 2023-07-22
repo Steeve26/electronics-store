@@ -7,7 +7,10 @@ import delivery from './assets/delivery.png'
 import productReturn from './assets/product-return.png'
 import security from './assets/credit-card.png'
 import support from './assets/support.png'
+import Airpod from './assets/Airpod Max.png'
 import Services from './components/services'
+import ProductCard from './components/productCard'
+import {VscVerifiedFilled} from 'react-icons/vsc'
 
 export default function App() {
   return (
@@ -54,12 +57,44 @@ export default function App() {
         <Wave/>
 
         <div className="services-highlight-container">
-          <Services img={delivery} alt={'delivery icon'} title={'Free Delivery'} description={'On all orders over 75$'}/>
-          <Services img={productReturn} alt={'return product icon'} title={'Free Returns'} description={'Return are free within 6 days'}/>
-          <Services img={security} alt={'security icon'} title={'Secure Payment'} description={'Safe and secure payment'}/>
-          <Services img={support} alt={'customer support icon'} title={'24/7 Support'} description={'Relable 24 hour support'}/>
+
+          <div className="services-wrapper">
+            <Services img={delivery} alt={'delivery icon'} title={'Free Delivery'} description={'On all orders over 75$'}/>
+            <Services img={productReturn} alt={'return product icon'} title={'Free Returns'} description={'Returns are free within 6 days'}/>
+            <Services img={security} alt={'security icon'} title={'Secure Payment'} description={'Safe and secure payment'}/>
+            <Services img={support} alt={'customer support icon'} title={'24/7 Support'} description={'Reliable 24 hour support'}/>
+          </div>
         </div>
       </div>
+
+      <main>
+        <section className="products">
+          <div className="advert">
+            <div className="call-to-action">
+              <div className="text">
+                <h1 className="title">Apple Airpods Max <VscVerifiedFilled/></h1>
+                <p className="description">Introducing AirPods Max — a perfect balance of exhilarating high-fidelity audio and the effortless magic of AirPods. The ultimate personal listening experience is here. With AirPods Max, you can immerse yourself in stunning sound quality and enjoy a seamless wireless experience.</p>
+              </div>
+              <button>Shop now</button>
+            </div>
+            <img src={Airpod} alt="Airpods Max" />
+          </div>
+
+            <div className="product-wrapper">
+              <h1 className="title">Featured Products</h1>
+              <div className="products-container">
+                <ProductCard></ProductCard>
+                <ProductCard></ProductCard>
+                <ProductCard></ProductCard>
+                <ProductCard></ProductCard>
+                <ProductCard></ProductCard>
+                <ProductCard></ProductCard>
+                <ProductCard></ProductCard>
+                <ProductCard></ProductCard>
+              </div>
+            </div>
+        </section>
+      </main>
 
       <section className="newsletter">
         <div className="title-container">
