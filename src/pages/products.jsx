@@ -1,6 +1,6 @@
 import ProductGrid from "../components/productGrid"
 import styles from './products.module.css'
-import iphone from '../assets/iPhone-14-pro.png'
+import iphone from '../assets/iPhone-14-Pro.png'
 import tab from '../assets/galaxy tab s9.webp'
 import {RiEqualizerLine} from 'react-icons/ri'
 import {IoIosArrowDown} from 'react-icons/io'
