@@ -84,7 +84,7 @@
   justify-content: center;
   gap: 10px;
   cursor: pointer;
-  transition-duration: .1s;
+  transition-duration: .3s;
 }
 .filtersWrapper .sorting:hover {
   background: var(--lightGrey);
