@@ -1,6 +1,6 @@
 import ProductGrid from "../components/productGrid"
 import styles from './products.module.css'
-
+// import iphone from '../assets/iPhone-14-pro.png'
 import tab from '../assets/galaxy tab s9.webp'
 import {RiEqualizerLine} from 'react-icons/ri'
 import {IoIosArrowDown} from 'react-icons/io'
@@ -11,7 +11,7 @@ export default function products() {
       <div className={styles.advertWrapper}>
 
         <div className={styles.advertContainer}>
-
+          {/* <img width='150px' src={iphone} alt='' />    */}
 
           <div className={styles.callToAction}>
             <h1 className={styles.title}>Latest phones in stock</h1>
