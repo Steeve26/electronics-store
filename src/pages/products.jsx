@@ -2,7 +2,7 @@ import ProductGrid from "../components/productGrid"
 import styles from './products.module.css'
 import iphone from '../assets/iPhone-14-pro.png'
 import tab from '../assets/galaxy tab s9.webp'
-import {RiArrowDownSLine, RiEqualizerLine} from 'react-icons/ri'
+import {RiEqualizerLine} from 'react-icons/ri'
 import {IoIosArrowDown} from 'react-icons/io'
 
 export default function products() {
