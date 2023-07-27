@@ -1,0 +1,97 @@
+@import '../App.css';
+
+.advertWrapper {
+  display: flex;
+  gap: 1em;
+  margin-top: 6em;
+}
+.advertContainer {
+  flex: 1;
+  height: 22em;
+  background: var(--lightBlack);
+  border-radius: 7px;
+  display: flex;
+  padding-inline: 3em;
+  transition-duration: .3s;
+  cursor: pointer;
+}
+.advertContainer:hover {
+  box-shadow: #00000029 0px 1px 4px, #333333 0px 0px 0px 3px, #00000017 0px 2px 1px, #00000017 0px 4px 2px, #00000017 0px 8px 4px, #00000017 0px 16px 8px, #00000017 0px 32px 16px;
+  transform: translateY(-5px);
+}
+.advertContainer:last-of-type:hover {
+  box-shadow: #00000029 0px 1px 4px, #4781c7 0px 0px 0px 3px, #00000017 0px 2px 1px, #00000017 0px 4px 2px, #00000017 0px 8px 4px, #00000017 0px 16px 8px, #00000017 0px 32px 16px;
+}
+.advertContainer:first-of-type {
+  background: #4781c7;
+}
+.advertContainer img {
+  object-fit: contain;
+}
+.callToAction {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.callToAction h1 {
+  font-family: quicksand;
+  font-size: 2.3em;
+  text-align: center;
+  margin-bottom: 15px;
+  text-wrap: balance;
+  color: white;
+}
+.callToAction p {
+  text-align: center;
+  max-width: 17em;
+  text-wrap: balance;
+  color: white;
+}
+.filtersWrapper {
+  text-transform: capitalize;
+}
+.filtersContainer {
+  display: flex;
+  gap: 1em;
+}
+.filtersWrapper .filter {
+  padding: 5px 15px;
+  border-radius: 20em;
+  background: var(--lightGrey);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  cursor: pointer;
+  transition-duration: .3s;
+}
+.filtersWrapper .filter:not(.filter:last-of-type) {
+  gap: .7em;
+}
+.filtersWrapper .filter:hover {
+  box-shadow: #4398ff 0px 0px 0px 3px;
+}
+.filtersWrapper .sorting {
+  padding: 5px 15px;
+  border-radius: 20em;
+  border: 1px solid #aaa;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition-duration: .3s;
+}
+.filtersWrapper .sorting:hover {
+  background: var(--lightGrey);
+  border-color: var(--lightGrey);
+}
+.filtersWrapper {
+  margin-top: 5em;
+  display: flex;
+  justify-content: space-between;
+}
