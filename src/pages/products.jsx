@@ -1,9 +1,19 @@
 import ProductGrid from "../components/productGrid"
+import CategoryCard from "../components/categoryCard"
 import styles from './products.module.css'
 import iphone from '../assets/iPhone-14-Pro.png'
 import tab from '../assets/galaxy tab s9.webp'
 import {RiEqualizerLine} from 'react-icons/ri'
 import {IoIosArrowDown} from 'react-icons/io'
+import googleHome from '../assets/googleHome.png'
+import ps5Controller from '../assets/AkatsukiController.png'
+import galaxyProjector from '../assets/Galaxy Projector.png'
+import AppleVisionPro from '../assets/VisionPro.png'
+import RedragonKeyboard from '../assets/RedragonKeyboard.png'
+import JBLSpeaker from '../assets/JBLSpeaker.png'
+import GamingMouse from '../assets/GamingMouse.png'
+import AirpodsPro from '../assets/Airpods Pro.png'
+import Headset from '../assets/Headset.png'
 
 export default function products() {
   return (
@@ -29,6 +39,42 @@ export default function products() {
         </div>
       </div>
 
+      <section className="categoryCardsWrapper">
+        {/* <div className="catTitleWrap"> */}
+          <h6 className="cardTitle">Popular Categories</h6>
+        {/* </div> */}
+        <div className="scrollIndicator">
+          <div className="categoryCardsContainer">
+            <CategoryCard image={googleHome} text={'Home Assistants'}/>
+            <CategoryCard image={ps5Controller} text={'Exotic Controllers'}/>
+            <CategoryCard image={galaxyProjector} text={'Galaxy Projectors'}/>
+            <CategoryCard image={AppleVisionPro} text={'VR Headsets'}/>
+            <CategoryCard image={RedragonKeyboard} text={'Mechanical Keyboards'}/>
+            <CategoryCard image={JBLSpeaker} text={'Wireless Speakers'}/>
+            <CategoryCard image={GamingMouse} text={'Gaming Mice'}/>
+            <CategoryCard image={AirpodsPro} text={'Earbuds'}/>
+            <CategoryCard image={Headset} text={'Headsets'}/>
+            <CategoryCard image={galaxyProjector} text={'Galaxy Projectors'}/>
+            <CategoryCard image={RedragonKeyboard} text={'Mechanical Keyboards'}/>
+          </div>
+        </div>
+        <div className="scrollIndicator">
+          <div className="categoryCardsContainer">
+            <CategoryCard image={Headset} text={'Headsets'}/>
+            <CategoryCard image={AirpodsPro} text={'Earbuds'}/>
+            <CategoryCard image={GamingMouse} text={'Gaming Mice'}/>
+            <CategoryCard image={JBLSpeaker} text={'Wireless Speakers'}/>
+            <CategoryCard image={RedragonKeyboard} text={'Mechanical Keyboards'}/>
+            <CategoryCard image={AppleVisionPro} text={'VR Headsets'}/>
+            <CategoryCard image={galaxyProjector} text={'Galaxy Projectors'}/>
+            <CategoryCard image={ps5Controller} text={'Exotic Controllers'}/>
+            <CategoryCard image={Headset} text={'Headsets'}/>
+            <CategoryCard image={AirpodsPro} text={'Earbuds'}/>
+            <CategoryCard image={googleHome} text={'Home Assistants'}/>
+          </div>
+        </div>
+      </section>
+
       <div className={styles.filtersWrapper}> 
         <div className={styles.filtersContainer}>
           <div className={styles.filter}>category <IoIosArrowDown rotate={30} size={15}/></div>
@@ -47,6 +93,8 @@ export default function products() {
           <ProductGrid cards='12'/>
         </div>
       </div>
+
+
     </>
   )
 }

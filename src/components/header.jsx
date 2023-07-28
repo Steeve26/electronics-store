@@ -14,7 +14,9 @@ export default function Header() {
       </div>
 
       <div className="search-bar-wrapper">
-        <h1 className="title">TechTrove</h1>
+        <NavLink to="/">
+          <h1 className="title">TechTrove</h1>
+        </NavLink>
         <div className="search-box-container">
           <input type="text" placeholder='Search your gadgets'/>
           <button>Search</button>

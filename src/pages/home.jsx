@@ -49,7 +49,7 @@ export default function home() {
 
           <div className="product-wrapper">
             <div className="title-wrapper">
-              <h1 className="title">Featured Products</h1>
+              <h6 className="title">Featured Products</h6>
             </div>
             <ProductGrid cards='8'/>
           </div>
