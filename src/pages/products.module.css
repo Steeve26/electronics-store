@@ -16,11 +16,13 @@
   cursor: pointer;
 }
 .advertContainer:hover {
-  box-shadow: #00000029 0px 1px 4px, #333333 0px 0px 0px 3px, #00000017 0px 2px 1px, #00000017 0px 4px 2px, #00000017 0px 8px 4px, #00000017 0px 16px 8px, #00000017 0px 32px 16px;
+  box-shadow: #00000029 0px 1px 4px, #333333 0px 0px 0px 3px, #00000017 0px 2px 1px,
+  #00000017 0px 4px 2px, #00000017 0px 8px 4px, #00000017 0px 16px 8px, #00000017 0px 32px 16px;
   transform: translateY(-5px);
 }
 .advertContainer:last-of-type:hover {
-  box-shadow: #00000029 0px 1px 4px, #4781c7 0px 0px 0px 3px, #00000017 0px 2px 1px, #00000017 0px 4px 2px, #00000017 0px 8px 4px, #00000017 0px 16px 8px, #00000017 0px 32px 16px;
+  box-shadow: #00000029 0px 1px 4px, #4781c7 0px 0px 0px 3px, #00000017 0px 2px 1px,
+  #00000017 0px 4px 2px, #00000017 0px 8px 4px, #00000017 0px 16px 8px, #00000017 0px 32px 16px;
 }
 .advertContainer:first-of-type {
   background: #4781c7;
@@ -50,7 +52,10 @@
   color: white;
 }
 .filtersWrapper {
-  text-transform: capitalize;
+  margin-top: 6em;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;  
 }
 .filtersContainer {
   display: flex;
@@ -90,8 +95,48 @@
   background: var(--lightGrey);
   border-color: var(--lightGrey);
 }
-.filtersWrapper {
-  margin-top: 5em;
+.salesWrapper {
+  margin-block: 6em;
+}
+.salesTitle {
+  margin-bottom: 2em;
+}
+.salesGridContainer {
   display: flex;
-  justify-content: space-between;
+  height: 22em;
+}
+.salesGridContainer, .gridWrapper, .gridSubWrapper {
+  display: flex;
+}
+.gridWrapper > .salesGrid:first-child{
+  flex: 2;
+}
+.gridWrapper, .salesgridWrapper {
+  flex: 3;
+}
+.gridSubWrapper, .gridSubWrapper .salesGrid {
+  flex: 2;
+}
+.gridSubWrapper {
+  flex-direction: column;
+}
+.salesGrid {
+  border: 1px solid #eee;
+  border-radius: 7px;
+}
+.salesGridContainer > .salesGrid:first-of-type {
+  flex: 2;
+  display: flex;
+  padding: 20px;
+}
+.salesGridContainer > .salesGrid:first-of-type h3 {
+  font-weight: 600;
+  font-size: 1.4em;
+  max-width: 11em;
+}
+.salesGridContainer > :first-child {
+  background: #d3e5f2 !important;
+}
+.salesGridContainer, .gridWrapper, .gridSubWrapper {
+  gap: 1em;
 }

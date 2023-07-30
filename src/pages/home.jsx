@@ -1,11 +1,12 @@
+import ActionBtn from '../components/ActionBtn'
+import Services from '../components/services'
+import ProductGrid from '../components/productGrid'
 import Wave from '../assets/wave'
 import delivery from '../assets/delivery.png'
 import productReturn from '../assets/product-return.png'
 import security from '../assets/credit-card.png'
 import support from '../assets/support.png'
 import Airpod from '../assets/Airpod Max.png'
-import Services from '../components/services'
-import ProductGrid from '../components/productGrid'
 import {VscVerifiedFilled} from 'react-icons/vsc'
 
 export default function home() {
@@ -15,7 +16,7 @@ export default function home() {
         <div className="hero-text">
           <h1>Get Your Dream Setup Today</h1>
           <p>Experience new possibilities!</p>
-          <button>Shop now</button>
+          <ActionBtn/>
         </div>
       </section>
 
@@ -40,7 +41,7 @@ export default function home() {
                 <h1 className="title">Apple Airpods Max <VscVerifiedFilled/></h1>
                 <p className="description">Introducing AirPods Max — a perfect balance of exhilarating high-fidelity audio and the effortless magic of AirPods. The ultimate personal listening experience is here. With AirPods Max, you can immerse yourself in stunning sound quality and enjoy a seamless wireless experience.</p>
               </div>
-              <button>Shop now</button>
+              <ActionBtn></ActionBtn>
             </div>
 
             <img src={Airpod} alt="Airpods Max" />

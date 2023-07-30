@@ -116,14 +116,12 @@ nav ul li::after {
   bottom: 0;
   left: 0;
   border-radius: 3px;
-  /* width: 0; */
   width: 100%;  
   transition-duration: .3s;
   transform: scaleX(0);
   transform-origin: left;
 }
 nav ul li:hover::after {
-  /* width: 100%; */
   transform: scaleX(1);
 }
 .hero-img {
@@ -151,6 +149,16 @@ nav ul li:hover::after {
   transition-duration: .3s;
   font-weight: 600;
   font-size: 16px;
+}
+.ctaBtn {
+  padding: 10px 1.2em;
+  background: var(--blue);
+  color: white;
+  margin-top: 2em;
+  font-size: 1.05em;
+  transition-duration: .3s;
+  border-radius: 3px;
+  text-transform: capitalize;
 }
 .hero-text button:hover {
   background: var(--lightBlack);
@@ -284,7 +292,7 @@ nav ul li:hover::after {
   flex-wrap: wrap;
   justify-content: center;
   gap: 3em 2em;
-  padding-block: 6em
+  padding-top: 3em;
 }
 .product-card {
   width: 20em;
@@ -324,7 +332,7 @@ nav ul li:hover::after {
   inset: 50% 0 50% 75%;
 }
 .categoryCardsWrapper {
-  margin-top: 4em;
+  margin-top: 6em;
 }
 .categoryCardsContainer {
   display: flex;

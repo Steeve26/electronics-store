@@ -1,5 +1,6 @@
 import ProductGrid from "../components/productGrid"
 import CategoryCard from "../components/categoryCard"
+import ActionBtn from '../components/ActionBtn'
 import styles from './products.module.css'
 import iphone from '../assets/iPhone-14-Pro.png'
 import tab from '../assets/galaxy tab s9.webp'
@@ -14,6 +15,7 @@ import JBLSpeaker from '../assets/JBLSpeaker.png'
 import GamingMouse from '../assets/GamingMouse.png'
 import AirpodsPro from '../assets/Airpods Pro.png'
 import Headset from '../assets/Headset.png'
+import Wonderboom from '../assets/wonderboom 2 speaker.png'
 
 export default function products() {
   return (
@@ -40,9 +42,8 @@ export default function products() {
       </div>
 
       <section className="categoryCardsWrapper">
-        {/* <div className="catTitleWrap"> */}
-          <h6 className="cardTitle">Popular Categories</h6>
-        {/* </div> */}
+        <h6 className="cardTitle">Popular Categories</h6>
+
         <div className="scrollIndicator">
           <div className="categoryCardsContainer">
             <CategoryCard image={googleHome} text={'Home Assistants'}/>
@@ -94,6 +95,40 @@ export default function products() {
         </div>
       </div>
 
+      <div className={styles.salesWrapper}>
+        <h6 className={styles.salesTitle}>On Sale This Week</h6>
+
+        <div className={styles.salesGridContainer}>
+          <div className={styles.salesGrid}>
+            <div className="callToAcction">
+              <h3 className="title">Multifunctional Bluetooth Speaker</h3>
+              <ActionBtn size={'1em'}/>
+            </div>
+            <img width={250} height={250} style={{marginBlock:'auto'}} src={Wonderboom}></img>
+          </div>
+
+          <div className={styles.gridWrapper}>
+            <div className={styles.salesGrid}>
+              <h3 className="title"></h3>
+              <div className="img"></div>
+            </div>
+
+            <div className={styles.gridSubWrapper}>
+              <div className={styles.salesGrid}>
+                <h3 className="title"></h3>
+                <div className="img"></div>
+              </div>
+
+              <div className={styles.salesGrid}>
+                <h3 className="title"></h3>
+                <div className="img"></div>
+              </div>
+            </div>
+            
+          </div>
+
+        </div>
+      </div>
 
     </>
   )
